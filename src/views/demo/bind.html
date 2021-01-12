@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="btn3" onclick="click3()"></button>
+  </body>
+  <script type="text/javascript">
+    function demo(){
+        console.log(this)
+    }
+
+    demo();
+    const x = demo.bind({a:1,b:2})   // .bind ()   返回一个新函数, 需要调用
+    x()
+  </script>
+</html>

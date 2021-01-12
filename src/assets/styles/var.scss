@@ -1,0 +1,29 @@
+// @font-face {
+//   font-family: "Microsoft Yahei";
+//   font-style: normal;
+//   font-weight: normal;
+//   src: url("/fonts/CenturyGothic.ttf") format("truetype");
+// }
+
+$color-primary-red: #fa0057;
+$color-primary-blue: #57a3f3;
+$color-primary-white: #fff;
+
+// green	0,128,0
+// type,primaryColor,darkColor,lightColor,fontColor,logoColor
+$themes: (
+    type: "black",
+    primaryColor: #3f3f3f,
+    darkColor: #303030,
+    lightColor: #4b4b4b,
+    fontColor: #ffffff,
+    titleColor: #ffffff,
+  ),
+  (
+    type: "white",
+    primaryColor: #fff,
+    darkColor: #e6e6e6,
+    lightColor: #f4f4f4,
+    fontColor: #000,
+    titleColor: #324472,
+  );

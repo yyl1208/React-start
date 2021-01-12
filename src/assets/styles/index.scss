@@ -1,0 +1,90 @@
+@import "./var.scss";
+html {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+iframe {
+  border: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin getStyles(
+  $type,
+  $color-primary,
+  $color-primary-dark,
+  $color-primary-light,
+  $color-font,
+  $color-title
+) {
+  .theme-#{$type} {
+    font-size: 16px;
+    color: $color-font;
+
+    .App {
+      display: flex;
+      flex-direction: column;
+    }
+
+    $header-height: 50px;
+    .App-header {
+      height: $header-height;
+      line-height: $header-height;
+      background-color: $color-primary-dark;
+    }
+
+    .App-main {
+      flex: 1;
+    }
+  }
+}
+
+//$themes: (type,primaryColor,darkColor,lightColor,fontColor,logoColor)
+@for $i from 1 through length($themes) {
+  $item: nth($themes, $i);
+  @include getStyles(
+    map-get($item, type),
+    map-get($item, primaryColor),
+    map-get($item, darkColor),
+    map-get($item, lightColor),
+    map-get($item, fontColor),
+    map-get($item, titleColor)
+  );
+}

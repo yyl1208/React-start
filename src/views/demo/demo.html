@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="btn1"></button>
+    <button id="btn2"></button>
+    <button id="btn3" onclick="click3()"></button>
+  </body>
+  <script type="text/javascript">
+    // 点击事件的三种实现方式
+    document.getElementById("btn1").addEventListener("click", () => {
+      console.log("按了1");
+    });
+
+    let btn2 = document.getElementById("btn2");
+    btn2.onclick = () => {
+      console.log("按了2");
+    };
+
+    function click3() {
+      console.log("按了3");
+    }
+  </script>
+</html>
