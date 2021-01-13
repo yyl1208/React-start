@@ -14,6 +14,16 @@ export default class Header extends React.Component {
   static defaultProps = {
     title: "首页",
   };
+
+  //罕见场景 若 state 的值在任何时候都取决于 props， 可以使用
+  static getDerivedStateFromProps(props, state) {
+    return null;
+  }
+
+  getSnapshotBeforeUpdate(){
+    return null;
+  }
+
   state = { title: "亮亮" };
   render() {
     let { title } = this.props;

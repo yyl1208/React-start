@@ -3,7 +3,7 @@ import Header from "./views/layout/header";
 import Main from "./views/layout/main";
 
 function App() {
-  let header = { title: "亮亮", func: ["watch"] };
+  let header = { title: "亮亮", fu0nc: ["watch"] };
   return (
     <div className="App">
       <Header {...header}></Header>
