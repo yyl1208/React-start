@@ -20,8 +20,14 @@ export default class Header extends React.Component {
     return null;
   }
 
-  getSnapshotBeforeUpdate(){
+  // dom 更新前调用 , 获取快照 , 参数返回给 componentDidUpdate作为参数
+  getSnapshotBeforeUpdate(props, state) {
     return null;
+  }
+
+  // 组件更新完毕
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("prevProps");
   }
 
   state = { title: "亮亮" };
