@@ -4,6 +4,7 @@ import "./assets/styles/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// <React.StrictMode>   用于检查 App 下组件写法
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -15,9 +16,7 @@ ReactDOM.render(
 2. 
 3. 将render返回的虚拟DOM转换成真实dom
 */
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 document.body.className = `theme-white`;
+
+// 用于 记录页面性能
 reportWebVitals();

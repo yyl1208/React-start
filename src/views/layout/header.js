@@ -1,12 +1,11 @@
-import logo from "../../assets/icons/logo.svg";
 import "../../assets/styles/App.css";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { Component } from "react";
 
-export default class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+export default class Header extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
   static propTypes = {
     title: PropTypes.string.isRequired,
     operate: PropTypes.func,
