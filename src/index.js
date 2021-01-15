@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import "./assets/styles/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import { BrowserRouter, HashRouter } from "react-router-dom";
 // <React.StrictMode>   用于检查 App 下组件写法
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

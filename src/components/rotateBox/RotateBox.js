@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./demo.scss";
+import "./box.scss";
 
-export default class BoxLoad extends Component {
+export default class RotateBox extends Component {
   render() {
     return (
       <div className="container">
@@ -19,5 +19,3 @@ export default class BoxLoad extends Component {
     );
   }
 }
-
-// to do  旋转切换 icon

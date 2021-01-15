@@ -29,7 +29,7 @@ export async function info() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-  } catch(err) {
+  } catch (err) {
     console.log(err);
   }
 }
