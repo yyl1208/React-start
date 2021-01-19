@@ -1,12 +1,11 @@
-import logo from "../../assets/icons/logo.svg";
 import "../../assets/styles/App.css";
 import PropTypes from "prop-types";
-import React from "react";
+import React, { Component } from "react";
 
-export default class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+export default class Header extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
   static propTypes = {
     title: PropTypes.string.isRequired,
     operate: PropTypes.func,
@@ -14,6 +13,22 @@ export default class Header extends React.Component {
   static defaultProps = {
     title: "首页",
   };
+
+  //罕见场景 若 state 的值在任何时候都取决于 props， 可以使用
+  static getDerivedStateFromProps(props, state) {
+    return null;
+  }
+
+  // dom 更新前调用 , 获取快照 , 参数返回给 componentDidUpdate作为参数
+  getSnapshotBeforeUpdate(props, state) {
+    return null;
+  }
+
+  // 组件更新完毕
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("prevProps");
+  }
+
   state = { title: "亮亮" };
   render() {
     let { title } = this.props;
