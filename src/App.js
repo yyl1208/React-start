@@ -1,7 +1,6 @@
 import "./assets/styles/App.css";
-import Header from "./views/layout/header";
-import Main from "./views/layout/main";
-import BoxLoad from "./views/components/loadingDemo";
+import Header from "@/pages/layout/header";
+// import Main from "./pages/layout/main";
 import { Route } from "react-router-dom";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
        */}
       <Route path="/home" component="Home"></Route>
       <Route path="/demo" component="Demo"></Route>
-      <BoxLoad></BoxLoad>
     </div>
   );
 }

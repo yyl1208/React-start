@@ -58,16 +58,44 @@ a:hover {
     font-size: 16px;
     color: $color-font;
 
+    .ant-menu {
+      background: $color-primary-dark;
+      color: $color-font;
+    }
+
     .App {
       display: flex;
       flex-direction: column;
     }
 
-    $header-height: 50px;
+    $header-height: 75px;
     .App-header {
       height: $header-height;
       line-height: $header-height;
       background-color: $color-primary-dark;
+      display: flex;
+      flex-direction: row;
+
+      .svg-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .header-menu {
+        color: $color-font;
+        span {
+          color: $color-font;
+          cursor: pointer;
+        }
+        
+        span:hover {
+          color: $color-primary-light;
+        }
+
+        span:active {
+          color: $color-primary-blue;
+        }
+      }
     }
 
     .App-main {

@@ -1,0 +1,12 @@
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+  overflow: hidden;
+  vertical-align: middle;
+}
+/* .svg-external-icon {
+  background-color: currentColor;
+  mask-size: cover !important;
+  display: inline-block;
+} */
