@@ -17,22 +17,17 @@ class Student extends Person {
   }
 
   //重写
-  speak(){
-    console.log(this)
+  speak() {
+    console.log(this);
   }
 
-  study(){
-      
-  }
+  study() {}
 }
 
-class car{
-  
-}
+class car {}
 
 let S1 = new Student();
-S1.speak()           //  this 实例
+S1.speak(); //  this 实例
 
-
-let x= s1.speak;
-x();                 //  undefined
+let x = s1.speak;
+x(); //  undefined

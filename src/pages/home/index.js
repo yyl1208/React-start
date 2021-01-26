@@ -1,11 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class index extends Component {
-    render() {
-        return (
-            <div>
-                home
-            </div>
-        )
-    }
+  render() {
+    return <div class="mian-container">home</div>;
+  }
 }
